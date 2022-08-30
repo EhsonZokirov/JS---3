@@ -4,17 +4,31 @@
 
 - bind() = функцияи объекти дигарира дигачода истифода мебарем!
 > const person = {
+> 
 >     firstName: "Ehson",
+> 
 >     lastName: "Zokirov",
+>
 >     fullName: function () {
+>
 >         return this.firstName + ' ' + this.lastName
+>
 >     },
-> }
-> const member = {
->     firstName: 'John',
->     lastName: 'Doe',
->     age: 22
+>
 > }
 >
+> const member = {
+>
+>     firstName: 'John',
+>
+>     lastName: 'Doe',
+>
+>     age: 22
+>
+> }
+>
+>
+>
 > let Method = person.fullName.bind(member)
+>
 > console.log(Method()); 
