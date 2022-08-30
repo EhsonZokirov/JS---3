@@ -77,3 +77,25 @@
 >  }).call(animals[i], i);
 >
 >}
+# Object.entries(obj)
+метод возвращает массив собственных перечисляемых свойств указанного объекта в формате [key, value]
+>
+>const obj = {
+>
+>    name: "Ehson",
+>
+>    age: 22
+>
+>}
+>
+>console.log(Object.entries(obj));//// [ [ 'name', 'Ehson' ], [ 'age', 22 ] ]
+
+# Object.assign(obj)
+Метод Object.assign() используется для копирования значений всех собственных перечисляемых свойств из одного или более исходных объектов в целевой объект. После копирования он возвращает целевой объект.
+>
+>var obj = { a: 1 };
+>
+>
+>var copy = Object.assign({}, obj);
+>
+>console.log(copy); // { a: 1 }
