@@ -1,9 +1,9 @@
-// ///////////////////////////////////// ENTRIES = массив ключ кати велю возвраащать мекна
-// const obj = {
-//     name: "Ehson",
-//     age: 22
-// }
-// console.log(Object.entries(obj));
+///////////////////////////////////// ENTRIES = массив ключ кати велю возвраащать мекна
+const obj = {
+    name: "Ehson",
+    age: 22
+}
+console.log(Object.entries(obj));//// [ [ 'name', 'Ehson' ], [ 'age', 22 ] ]
 
 /////////////////////////////////////// Object.keys(obj) = массивы ключора возвращать мекна
 // const obj = {
