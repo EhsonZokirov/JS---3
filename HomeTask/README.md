@@ -16,4 +16,5 @@ bind() = функцияи объекти дигарира дигачода ис�
  }
 
  let Method = person.fullName.bind(member)
- console.log(Method());
+ console.log(Method()); 
+;
