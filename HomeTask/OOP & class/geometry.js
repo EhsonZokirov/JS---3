@@ -10,4 +10,4 @@ class geometry {
     }
 }
 let geo = new geometry(1, 2, 3, 4)
-console.log(geo.str());
+console.log(geo.str());  //[x=1, y=2, w=3, h=4]
