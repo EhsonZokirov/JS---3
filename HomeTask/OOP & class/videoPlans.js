@@ -40,7 +40,7 @@ class BasicPlan {
     static price = '$8.99';
 
 }
-class StandartPlan extends BasicPlan {
+class StandartPlan {
     static canStream = true;
     static canDownload = true;
     static hasSD = true;
@@ -50,7 +50,7 @@ class StandartPlan extends BasicPlan {
     static price = "$12.99"
 }
 
-class PremiumPlan extends StandartPlan {
+class PremiumPlan {
     static canStream = true;
     static canDownload = true;
     static hasSD = true;
