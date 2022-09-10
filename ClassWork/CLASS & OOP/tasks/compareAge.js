@@ -20,4 +20,4 @@ let p1 = new Person('Ehson', 22)
 let p2 = new Person('Fayz', 17)
 let p3 = new Person('Abubakr', 17)
 
-console.log(p1.compareAge(p2));
+console.log(p3.compareAge(p1));
