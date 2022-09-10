@@ -11,14 +11,17 @@ class Workers {
         return (this.sum1 * this.kol_vo)
     }
 }
-// class Sum extends Workers {
-//     constructor(name, surname, sum1, kol_vo) {
-//         super(name, surname, sum1, kol_vo,)
-//     }
+class Sum extends Workers {
+    constructor(name, surname, sum1, kol_vo) {
+        super(name, surname, sum1, kol_vo)
 
-// }
+    }
+    SumOfWorker() {
+        return this.getSalary() + this.getSalary()
+    }
+}
 
-let a = new Workers('Nsrat', 'Izzatov', 10, 31)
-let b = new Workers('Nsrat', 'Izzatov', 10, 31)
-console.log(Workers.cnt * a.getSalary());
+let a = new Sum('Nsrat', 'Izzatov', 10, 31) // 310
+let b = new Sum('Toshmat', 'Nsratov', 10, 31) // 310
+console.log(a.SumOfWorker());
 ////////////////////////////////////////////////// dar 1 moh chand somon ?
