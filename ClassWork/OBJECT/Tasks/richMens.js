@@ -1,12 +1,12 @@
 let persons =
     [
         { name: 'Romiz', price: 1000, valyute: 'TJS', },
-        { name: 'Messi', price: 150, valyute: 'TJS', },
-        { name: 'Ronaldo', price: 230, valyute: 'TJS', },
+        { name: 'Toshmat', price: 150, valyute: 'TJS', },
+        { name: 'Izzat', price: 230, valyute: 'TJS', },
         { name: 'Jony', price: 1234, valyute: 'USD', },
         { name: 'Max', price: 333, valyute: 'USD', },
         { name: 'John', price: 780, valyute: 'USD', },
-        { name: 'Doe', price: 280, valyute: 'TJS', },
+        { name: 'Nsrat', price: 280, valyute: 'TJS', },
     ]
 function USD(persons) {
     let arr1 = []
@@ -20,6 +20,7 @@ function USD(persons) {
         res += (Math.ceil(arr1[i].price * 10.20)) // [ 12587, 3397, 7956 ] = 23940
     }
     return `sum of USA = ${res} TJS`
+    
 }
 function TJS(persons) {
     let res = []
