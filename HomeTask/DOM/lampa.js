@@ -5,15 +5,15 @@ on.style.display = 'none'
 btn.style.background = 'yellow'
 
 btn.onclick = () => {
-    if (btn.innerHTML == 'on') {
-        btn.innerHTML = 'off'
+    if (btn.innerHTML == 'ON') {
+        btn.innerHTML = 'OFF'
         btn.style.backgroundColor = 'silver'
-        off.innerHTML = style.display = "none"
-        on.innerHTML = on.style.display = 'block'
+        on.innerHTML = on.style.display = 'inline-block'
+        off.innerHTML = off.style.display = "none"
         return
     }
-    btn.innerHTML = 'on'
+    btn.innerHTML = 'ON'
     btn.style.backgroundColor = 'yellow'
     on.innerHTML = on.style.display = "none"
-    off.innerHTML = off.style.display = 'block'
+    off.innerHTML = off.style.display = 'inline-block'
 }
