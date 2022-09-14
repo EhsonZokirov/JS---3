@@ -10,7 +10,7 @@ btn.onclick = () => {
         btn.style.backgroundColor = 'silver'
         on.innerHTML = on.style.display = 'inline-block'
         off.innerHTML = off.style.display = "none"
-        return
+        
     }
     btn.innerHTML = 'ON'
     btn.style.backgroundColor = 'yellow'

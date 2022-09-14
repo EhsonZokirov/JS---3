@@ -12,6 +12,7 @@
         width: 150px;
         height: 150px;
         border: 2px dashed;
+        padding: 10px;
     }
 </style>
 
@@ -19,7 +20,14 @@
     <input type="text" class="inp">
     <button class="btn">Color</button>
     <br><br>
-    <div class="res"></div>
+    <div class="res">
+        <br>
+        <p>1-4 = red</p>
+        <p>5-6 = yellow</p>
+        <p>7-10 = green</p>
+    </div>
+
+
     <script>
         let num = document.querySelector(`.inp`)
         let btn = document.querySelector(`.btn`)
