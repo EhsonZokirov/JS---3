@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=7, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .res {
+        width: 150px;
+        height: 150px;
+        border: 2px dashed;
+    }
+</style>
+
+<body>
+    <input type="text" class="inp">
+    <button class="btn">Color</button>
+    <br><br>
+    <div class="res"></div>
+    <script>
+        let num = document.querySelector(`.inp`)
+        let btn = document.querySelector(`.btn`)
+        let res = document.querySelector(`.res`)
+
+        btn.onclick = () => {
+            if (num.value > 0 && num.value <= 4) {
+                res.style.background = 'red'
+                res.innerHTML
+            }
+            if (num.value > 4 && num.value <= 6) {
+                res.style.background = 'yellow'
+                res.innerHTML
+            }
+            if (num.value > 6 && num.value <= 10) {
+                res.style.background = 'green'
+                res.innerHTML
+            }
+            else if (num.value <= 0 || num.value > 10) {
+                res.style.background = 'transparent'
+                res.innerHTML
+            }
+        }
+    </script>
+</body>
+
+</html>
