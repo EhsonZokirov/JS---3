@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: silver;
+    }
+
+    .table {
+        border-bottom: 2px solid steelblue;
+        background-color: steelblue;
+        color: white;
+        font-size: 30px;
+        border-collapse: collapse;
+        margin: 10vh auto;
+    }
+
+    .green th {
+        padding: 15px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .modalContent {
+        margin: auto;
+    }
+
+    .modal {
+        background-color: rgba(0, 0, 0, 0.6);
+        text-align: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        display: none;
+    }
+
+    #textModal {
+        outline: none;
+    }
+
+    #send {
+        padding: 10px 20px;
+        font-size: large;
+    }
+
+    .send2 {
+        padding: 10px 20px;
+        font-size: large;
+    }
+
+    .modalContent input {
+        text-align: center;
+        padding: 10px 5px;
+        font-size: large;
+        margin-top: 40vh;
+        outline: 0;
+    }
+
+    .tbody {
+        background-color: white;
+        color: black;
+    }
+
+    .edit:hover {
+        background-color: rgb(38, 116, 71);
+    }
+
+    .edit {
+        font-family: monospace;
+        padding: 5px 15px;
+        background-color: seagreen;
+        font-size: 20px;
+        border: 1px solid black;
+        color: white;
+        border-radius: 3px;
+    }
+
+    .delet:hover {
+        background-color: rgb(243, 109, 90);
+    }
+
+    .delet {
+        font-family: monospace;
+
+        padding: 5px 15px;
+        background-color: salmon;
+        font-size: 20px;
+        border: 1px solid black;
+        color: white;
+        border-radius: 3px;
+    }
+
+
+
+    .line {
+        text-align: center;
+
+    }
+
+    /* 
+    modal 2    
+    */
+    .modalContent2 {
+        margin: auto;
+    }
+
+    .modal2 {
+        background-color: rgba(0, 0, 0, 0.6);
+        text-align: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        display: none;
+    }
+
+    #textModal2 {
+        outline: none;
+    }
+
+    #send2 {
+        padding: 10px 20px;
+        font-size: large;
+    }
+
+    .modalContent2 input {
+        text-align: center;
+        padding: 10px 5px;
+        font-size: large;
+        margin-top: 40vh;
+        outline: 0;
+    }
+</style>
+
+<body>
+
+    <table class="table">
+        <caption style="color: black">Table Users</caption>
+        <tr class="green">
+            <th>id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Job</th>
+            <th>Phone</th>
+            <th>Delete</th>
+            <th>Edit</th>
+        </tr>
+        <tbody class="tbody">
+
+        </tbody>
+        <button class="add">AddUsers</button>
+        <div class="modal">
+            <div class="modalContent">
+                <input type="text" name="text" id="modalName" placeholder="name">
+                <input type="text" name="text" id="modalAge" placeholder="age">
+                <input type="text" name="text" id="modalJob" placeholder="job">
+                <input type="text" name="text" id="modalPhone" placeholder="phone">
+                <button id="send">SEND</button>
+
+            </div>
+        </div>
+        <div class="modal2">
+            <div class="modalContent2">
+                <input type="text" name="text" id="modalName2" placeholder="name">
+                <input type="text" name="text" id="modalAge2" placeholder="age">
+                <input type="text" name="text" id="modalJob2" placeholder="job">
+                <input type="text" name="text" id="modalPhone2" placeholder="phone">
+                <button class="send2">SEND</button>
+            </div>
+        </div>
+    </table>
+
+    <script src="Table.js"></script>
+</body>
+
+</html>
