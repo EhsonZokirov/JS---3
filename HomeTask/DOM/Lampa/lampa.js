@@ -5,6 +5,8 @@ on.style.display = 'none'
 btn.style.background = 'yellow'
 
 btn.onclick = () => {
+    btn.classList.toggle(`onOff`)
+
     if (btn.innerHTML == 'ON') {
         btn.innerHTML = 'OFF'
         btn.style.backgroundColor = 'silver'
@@ -16,4 +18,6 @@ btn.onclick = () => {
     btn.style.backgroundColor = 'yellow'
     on.innerHTML = on.style.display = "none"
     off.innerHTML = off.style.display = 'inline-block'
+
+
 }
